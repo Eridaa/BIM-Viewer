@@ -1,0 +1,257 @@
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+
+  --light-gray: rgb(123, 123, 123);
+  --light-blue: #8dbafff0;
+  --translucent-white: rgba(255, 255, 255, 0.7);
+
+  --normal-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  --blur-filter: blur(8px);
+}
+
+input{
+  visibility: collapse;
+}
+
+
+section{
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer *:last-child {
+  color: var(--light-blue);
+}
+
+h2 {
+    font-size: 0.6rem;
+    margin: 2rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin: 1rem;
+}
+
+p {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#load-button{
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+}
+
+.hide-overflow {
+    overflow: hidden;
+}
+
+.bottom {
+    bottom: 1rem;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.toolbar a {
+  margin: 0.5rem;
+  margin-bottom: 2rem;
+  
+}
+
+/* From uiverse.io by @fanishah */
+.card {
+    margin: 2rem;
+    min-width: 7rem;
+    max-width: 7rem;
+    height: 7rem;
+    background-color: #ffffff;
+    border-radius: 0.4rem;
+    transition: all 0.15s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* From uiverse.io */
+.button, #main-button {
+    padding: 0.7rem;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background: var(--translucent-white);
+    backdrop-filter: var(--blur-filter);
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+  }
+  
+  .button:hover, #main-button:hover {
+    border-style: solid;
+    border-width: thin;
+  }
+
+  .buttonhover {
+    padding: 0.7rem;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background: var(--translucent-white);
+    backdrop-filter: var(--blur-filter);
+    border: solid;
+    border-width: thin;
+    border-radius: 20px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    width: fit-content; 
+  }
+
+  #loadfile{
+    border-style: solid;
+    border-width: thin;
+  }
+  #loadfile:hover{
+    border-style: none;
+  }
+  
+
+  .simple-card-container {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+  }
+
+  /* From uiverse.io by @adamgiebl */
+.simple-card {
+    margin: 1rem;
+    z-index: 1;
+    width: 190px;
+    padding: 1rem;
+    border-radius: .8rem;
+    border-style: solid;
+    border-width: thin;
+   text-align: center;
+   }
+  #ifc-property-menu-root{
+    width: 20%;
+    position: absolute;
+    right: 1rem;
+    font-size: .7rem;
+  }
+
+  .ifc-property-value {
+    border: 1px solid gray;
+    width: 20rem;
+    width: 100%;
+    text-align: right;
+}
+
+   .hidden, #hidden{
+  display: none;
+}
+
+.ifcjs-dimension-preview {
+  width: 1rem;
+  height: 1rem;
+  background-color: #8dbafff0;
+  border-radius: 1rem;
+  opacity: 0.5;
+}
+
+.ifcjs-dimension-label {
+  background-color: rgba(105, 103, 103, 0.7);
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+#button-container {
+  z-index: 2;
+  position: absolute;
+  right: 3rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#button-container * {
+  margin: 0.5rem;
+  padding: 8px;
+  
+}
+
+.disable{
+  pointer-events:none;
+  background-color: #f0f0f0;
+}
+#loadtest{
+  margin: 5rem;
+}
+
+#testsection{
+  padding:3rem;
+}
+
+#model-iframe{
+  width: 140px;
+  height:180px;
+}
+
+#model-iframe:hover{
+  width: 300px;
+  height:300px;
+  background-color: white;
+  z-index: 1;
+  padding:5 rem;
+  border: solid;
+  border-width: thin;
+  transform: translateY(10px);
+
+}
